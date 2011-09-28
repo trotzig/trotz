@@ -1,0 +1,3 @@
+<project name="trotz" basedir="." default="runserver">
+	<import file="../quesadilla/build-ivy.xml" />
+</project>

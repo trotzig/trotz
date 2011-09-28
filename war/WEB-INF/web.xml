@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<filter>
+		<filter-name>adminRoutingFilter</filter-name>
+		<filter-class>burrito.RouterFilter</filter-class>
+
+		<init-param>
+			<param-name>router</param-name>
+			<param-value>burrito.BurritoRouter</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>routingFilter</filter-name>
+		<filter-class>burrito.RouterFilter</filter-class>
+
+		<init-param>
+			<param-name>router</param-name>
+			<param-value>trotz.Router</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<!-- This filter mapping is required by burrito -->
+		<filter-name>adminRoutingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>routingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<listener>
+	  <!-- Initializer for burrito -->
+	  <listener-class>trotz.Configurator</listener-class>
+	</listener>
+
+</web-app>

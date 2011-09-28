@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.2" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation=
+                   "http://ant.apache.org/ivy/schemas/ivy.xsd">
+                   
+    <info organisation="kanal5" module="breaking" resolver="http://cat994/nexus/content/groups/public/">
+    	<extends revision="1" organisation="kanal5" module="quesadilla" location="../quesadilla/ivy-default.xml"/>
+    </info>
+    <dependencies> 
+   		
+    </dependencies>
+</ivy-module>
