@@ -1,0 +1,120 @@
+@import "reset";
+@import "fonts";
+@import "colors";
+@import "960";
+.top-wrapper {
+	background-color: #F0F0F0;
+	.top {
+		position: relative;
+		width: 960px;
+		height: 400px;
+		margin: 0 auto;
+		.header {
+			position: absolute;
+			top: 40px;
+			left: 0px;
+			
+			h1 {
+				font-family: DF-GameOverRegular, helvetica, arial;
+				font-size: 45pt;
+				color: $green;
+			}
+			p {
+				font-family: MinionProBold, helvetica, arial;
+			}
+		}
+		.message {
+			position: absolute;
+			right: 375px;
+			bottom: 30px;
+			width: 400px;
+		}
+		.image {
+			position: absolute;
+			right: 30px;
+			bottom: 0px;
+		}
+	}
+}
+
+.lower-wrapper {
+	.lower {
+		h2 {
+			padding-bottom: 10px;
+			text-transform: uppercase;
+			border-bottom: 1px solid $green;
+			color: $green;
+			display: block;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		.quotes {
+			margin-top: 40px;
+		}
+		
+		.quote {
+		}
+		
+		.portfolio {
+			margin-top: 40px;
+			
+			.item {
+				float: left;
+				display: block;
+				width: 150px;
+				margin-right: 50px;
+				.image {
+					background-image: url(/img/portfolio_bomb.png);
+					background-repeat: no-repeat;
+					height: 153px;
+					width: 158px;
+				}
+				h3 {
+					margin-top: 10px;
+					text-align: center;
+					font-weight: bold;
+					color: $pink;
+				}
+			}
+		}
+		
+		.content {
+			border: 1px solid $green;
+			border-top: none;
+			padding: 20px;
+			min-height: 500px;
+			margin-bottom: 200px;
+		}
+		
+		.arrow-container {
+			display: block;
+			height: 26px;
+			margin-top: 20px;
+			position: relative;
+			border-bottom: 1px solid $green; 
+			
+			#arrow {
+				position: absolute;
+				bottom: -1px;
+				left: 0px;
+				background-color: #FFFFFF;
+				background-image: url(/img/pil2.png);
+				background-repeat: no-repeat;
+				width: 30px;
+				height: 26px;
+			}
+		}	
+		
+		
+	}
+}	
+
+.last {
+	margin-right: 0px !important;
+}
+
+body {
+	font-family: helvetica, arial;
+}
+

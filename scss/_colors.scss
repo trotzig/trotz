@@ -1,0 +1,8 @@
+$green: rgb(115,201,208);
+$pink_rgba: rgba(171,118,138,0.9);
+$pink: rgb(171,118,138);
+
+@mixin makepink {
+	color: $pink_rgba;
+	color: $pink;
+}
