@@ -338,6 +338,23 @@ body {
 .container_12 {
   zoom: 1; }
 
+.lectric-slider, .lectric-slider .items {
+  position: relative; }
+
+.lectric-slider .items {
+  left: 0;
+  width: 100000px; }
+
+.lectric-slider-touch {
+  -webkit-transform: translate3d(0, 0, 0); }
+
+.lectric-slider-touch .items {
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  -webkit-font-smoothing: antialiased; }
+
+.lectric-slider-touch .item {
+  -webkit-transform: translate3d(0, 0, 0); }
+
 .top-wrapper {
   background-color: #F0F0F0; }
   .top-wrapper .top {
@@ -365,57 +382,112 @@ body {
       right: 30px;
       bottom: 0px; }
 
-.lower-wrapper .lower h2 {
-  padding-bottom: 10px;
-  text-transform: uppercase;
-  border-bottom: 1px solid #73c9d0;
-  color: #73c9d0;
-  display: block;
-  font-weight: bold;
-  margin-bottom: 10px; }
-.lower-wrapper .lower .quotes {
-  margin-top: 40px; }
-.lower-wrapper .lower .portfolio {
-  margin-top: 40px; }
-  .lower-wrapper .lower .portfolio .item {
-    float: left;
-    display: block;
-    width: 150px;
-    margin-right: 50px; }
-    .lower-wrapper .lower .portfolio .item .image {
-      background-image: url(/img/portfolio_bomb.png);
-      background-repeat: no-repeat;
-      height: 153px;
-      width: 158px; }
-    .lower-wrapper .lower .portfolio .item h3 {
-      margin-top: 10px;
-      text-align: center;
-      font-weight: bold;
-      color: #ab768a; }
-.lower-wrapper .lower .content {
-  border: 1px solid #73c9d0;
-  border-top: none;
-  padding: 20px;
-  min-height: 500px;
+.lower-wrapper {
   margin-bottom: 200px; }
-.lower-wrapper .lower .arrow-container {
-  display: block;
-  height: 26px;
-  margin-top: 20px;
-  position: relative;
-  border-bottom: 1px solid #73c9d0; }
-  .lower-wrapper .lower .arrow-container #arrow {
-    position: absolute;
-    bottom: -1px;
-    left: 0px;
-    background-color: #FFFFFF;
-    background-image: url(/img/pil2.png);
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 26px; }
+  .lower-wrapper .lower h2 {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #73c9d0;
+    color: #73c9d0;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .lower-wrapper .lower .quotes {
+    margin-top: 40px; }
+  .lower-wrapper .lower .portfolio {
+    margin-top: 40px; }
+    .lower-wrapper .lower .portfolio .item {
+      float: left;
+      display: block;
+      width: 150px;
+      margin-right: 50px;
+      cursor: pointer; }
+      .lower-wrapper .lower .portfolio .item .image {
+        background-image: url(/img/portfolio_bomb.png);
+        background-repeat: no-repeat;
+        height: 153px;
+        width: 158px;
+        -moz-opacity: 0.5;
+        -khtml-opacity: 0.5;
+        opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity * 100)"; }
+      .lower-wrapper .lower .portfolio .item h3 {
+        margin-top: 10px;
+        text-align: center;
+        font-weight: bold;
+        color: #ab768a; }
+    .lower-wrapper .lower .portfolio .item:hover .image {
+      -moz-opacity: 1;
+      -khtml-opacity: 1;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity * 100)"; }
+  .lower-wrapper .lower .content {
+    border: 1px solid #73c9d0;
+    border-top: none;
+    padding: 30px;
+    min-height: 500px;
+    margin-bottom: 200px; }
+  .lower-wrapper .lower .arrow-container {
+    display: block;
+    height: 26px;
+    margin-top: 20px;
+    position: relative;
+    border-bottom: 1px solid #73c9d0; }
+    .lower-wrapper .lower .arrow-container #arrow {
+      position: absolute;
+      bottom: -1px;
+      left: 0px;
+      background-color: #FFFFFF;
+      background-image: url(/img/pil2.png);
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 26px; }
 
 .last {
   margin-right: 0px !important; }
 
 body {
-  font-family: helvetica, arial; }
+  font-family: Quattrocento, helvetica, arial; }
+
+.slider {
+  position: relative; }
+  .slider .next, .slider .previous {
+    position: absolute;
+    top: 15%;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 85%;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity * 100)"; }
+  .slider .next:hover, .slider .previous:hover {
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity * 100)"; }
+  .slider .next {
+    left: 40px;
+    background-image: url(/img/pil-left.png);
+    background-position: center left; }
+  .slider .previous {
+    right: 40px;
+    background-image: url(/img/pil.png);
+    background-position: center right; }
+
+.portfolio-items .item {
+  width: 900px;
+  margin-right: 20px; }
+  .portfolio-items .item .info {
+    color: #73c9d0;
+    height: 70px;
+    overflow: hidden;
+    position: relative; }
+    .portfolio-items .item .info .header {
+      font-style: italic;
+      font-weight: bold; }
+    .portfolio-items .item .info .extra {
+      position: absolute;
+      font-size: 80%;
+      right: 2px;
+      top: 0px; }

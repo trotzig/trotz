@@ -8,6 +8,13 @@
     	<extends revision="1" organisation="kanal5" module="quesadilla" location="../quesadilla/ivy-default.xml"/>
     </info>
     <dependencies> 
-   		
+   		<dependency org="texmex" name="burrito" rev="0.2.2-SNAPSHOT">
+        	<exclude org="com.yahoo.platform.yui" name="yuicompressor"></exclude>
+        	<exclude org="rhino" name="js"></exclude>
+        	<exclude org="javax.servlet" name="servlet-api"></exclude>
+        	<exclude org="com.google.gwt" name="gwt-user"></exclude>
+        </dependency>
+        
+        <dependency org="siena" name="siena" rev="1.0.0-b5"/>
     </dependencies>
 </ivy-module>

@@ -1,5 +1,5 @@
-<%@page import="com.google.appengine.api.users.UserServiceFactory"%>
 <%@ page isELIgnored="false" contentType="text/html; charset=UTF-8"%>
+<%@ page import="com.google.appengine.api.users.UserServiceFactory"%>
 <% String logoutUrl = UserServiceFactory.getUserService().createLogoutURL("/"); %>
 <!DOCTYPE HTML>
 <html>
