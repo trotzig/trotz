@@ -24,9 +24,7 @@
 			  		${taco.message}
 			  	</p>  
 			  	
-			  	<div class="image">
-			  		<img src="/img/frilagd_malin.png" alt=""/>
-			  	</div>
+		  		<img class="image" src="/img/frilagd_malin.png" alt=""/>
 	  		</div>
 	  	</div>
 	  	

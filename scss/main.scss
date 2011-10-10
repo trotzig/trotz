@@ -8,7 +8,6 @@
   -moz-opacity: $opacity;
   -khtml-opacity: $opacity;
   opacity: $opacity;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity * 100)";
 }
 
 .top-wrapper {
@@ -20,7 +19,7 @@
 		margin: 0 auto;
 		.header {
 			position: absolute;
-			top: 40px;
+			top: 80px;
 			left: 0px;
 			
 			h1 {
@@ -30,13 +29,16 @@
 			}
 			p {
 				font-family: MinionProBold, helvetica, arial;
+				text-align: center;
 			}
 		}
 		.message {
 			position: absolute;
 			right: 375px;
 			bottom: 30px;
-			width: 400px;
+			width: 450px;
+			font-size: 20px;
+			text-align: right;
 		}
 		.image {
 			position: absolute;
@@ -64,6 +66,7 @@
 		}
 		
 		.quote {
+			font-weight: bold;
 		}
 		
 		.portfolio {
@@ -137,10 +140,10 @@ body {
 	position: relative;
 	.next, .previous {
 		position: absolute;
-		top: 15%;
+		top: 80px;
 		background-repeat: no-repeat;
 		width: 400px;
-		height: 85%;
+		height: 400px;
 		@include opacity(0);
 	}
 	.next:hover, .previous:hover {

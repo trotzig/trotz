@@ -4,9 +4,9 @@ import siena.Generator;
 import siena.Id;
 import siena.Model;
 import burrito.annotations.Displayable;
-import burrito.annotations.LongText;
 import burrito.annotations.RegexpValidation;
 import burrito.annotations.Required;
+import burrito.annotations.RichText;
 import burrito.annotations.SearchableField;
 
 public class PersonalMessage extends siena.Model {
@@ -22,7 +22,7 @@ public class PersonalMessage extends siena.Model {
 
     @SearchableField
     @Required
-    @LongText
+    @RichText
     private String message;
 
   

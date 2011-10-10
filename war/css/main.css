@@ -364,19 +364,22 @@ body {
     margin: 0 auto; }
     .top-wrapper .top .header {
       position: absolute;
-      top: 40px;
+      top: 80px;
       left: 0px; }
       .top-wrapper .top .header h1 {
         font-family: DF-GameOverRegular, helvetica, arial;
         font-size: 45pt;
         color: #73c9d0; }
       .top-wrapper .top .header p {
-        font-family: MinionProBold, helvetica, arial; }
+        font-family: MinionProBold, helvetica, arial;
+        text-align: center; }
     .top-wrapper .top .message {
       position: absolute;
       right: 375px;
       bottom: 30px;
-      width: 400px; }
+      width: 450px;
+      font-size: 20px;
+      text-align: right; }
     .top-wrapper .top .image {
       position: absolute;
       right: 30px;
@@ -394,6 +397,8 @@ body {
     margin-bottom: 10px; }
   .lower-wrapper .lower .quotes {
     margin-top: 40px; }
+  .lower-wrapper .lower .quote {
+    font-weight: bold; }
   .lower-wrapper .lower .portfolio {
     margin-top: 40px; }
     .lower-wrapper .lower .portfolio .item {
@@ -409,8 +414,7 @@ body {
         width: 158px;
         -moz-opacity: 0.5;
         -khtml-opacity: 0.5;
-        opacity: 0.5;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity * 100)"; }
+        opacity: 0.5; }
       .lower-wrapper .lower .portfolio .item h3 {
         margin-top: 10px;
         text-align: center;
@@ -419,8 +423,7 @@ body {
     .lower-wrapper .lower .portfolio .item:hover .image {
       -moz-opacity: 1;
       -khtml-opacity: 1;
-      opacity: 1;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity * 100)"; }
+      opacity: 1; }
   .lower-wrapper .lower .content {
     border: 1px solid #73c9d0;
     border-top: none;
@@ -453,19 +456,17 @@ body {
   position: relative; }
   .slider .next, .slider .previous {
     position: absolute;
-    top: 15%;
+    top: 80px;
     background-repeat: no-repeat;
     width: 400px;
-    height: 85%;
+    height: 400px;
     -moz-opacity: 0;
     -khtml-opacity: 0;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity * 100)"; }
+    opacity: 0; }
   .slider .next:hover, .slider .previous:hover {
     -moz-opacity: 1;
     -khtml-opacity: 1;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity * 100)"; }
+    opacity: 1; }
   .slider .next {
     left: 40px;
     background-image: url(/img/pil-left.png);

@@ -26,8 +26,8 @@ function loadItems(container, section) {
 	$.getJSON('/portfolio/' + section, function(json) {
 		container.empty();
 		container.addClass("slider");
-		var next = $('<a href="" class="next"/>');
-		var previous = $('<a href="" class="previous"/>');
+		var next = $('<a href="" class="next" title="Föregående"/>');
+		var previous = $('<a href="" class="previous" title="Nästa"/>');
 		var items = $('<div class="portfolio-items"/>');
 		for ( var i = 0; i < json.length; i++) {
 			var item = json[i];

@@ -39,6 +39,7 @@ public class PortfolioItem extends Model {
     private PortfolioSection section;
     
     @Image(width = 0)
+    @Displayable
     private String image;
 
     @Required

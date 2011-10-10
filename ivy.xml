@@ -14,6 +14,8 @@
         	<exclude org="javax.servlet" name="servlet-api"></exclude>
         	<exclude org="com.google.gwt" name="gwt-user"></exclude>
         </dependency>
+        <dependency org="commons-io" name="commons-io" rev="2.0.1">
+        </dependency>
         
         <dependency org="siena" name="siena" rev="1.0.0-b5"/>
     </dependencies>
